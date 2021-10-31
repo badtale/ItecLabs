@@ -1,0 +1,23 @@
+.my-table {
+    width: 25%;
+}
+
+.my-table td {
+    text-align: center;
+}
+
+.my-table th {
+    text-align: center;
+}
+
+.my-table td:first-child {
+    text-align: left;
+}
+
+.my-table tr:nth-child(even) {
+    background-color: #FFF8DC;
+    border: 1.5px solid #A52A2A;
+    border-top: 1px solid #A52A2A;
+    border-left: none;
+    border-right: none;
+}
