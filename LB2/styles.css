@@ -21,3 +21,17 @@
     border-left: none;
     border-right: none;
 }
+
+.lorem-text{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    background-color: blue;
+    color: white;
+}
+
+.positioned{
+    bottom: 10px;
+    left: 250px;
+    position: absolute;
+}
