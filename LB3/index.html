@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="script.js"></script>
+    <title>LB3</title>
 </head>
 <body>
-    LB3
+    <div>
+        <h4>Введите диапазон чисел на основе которых будет сгенерирована таблица размером 10 на 10</h4>
+        <div class="range-inputs-container">
+            <div class="range-input-wrapper">
+                <label for="min-range">Введите минимальное значение диапазона чисел:</label>
+                <input id="min-range" type="text"/>
+            </div>
+            <div class="range-input-wrapper">
+                <label for="max-range">Введите максимальное значение диапазона чисел:</label>
+                <input id="max-range" type="text" />
+            </div>
+            <input id="submit-button" type="button" value="Сгенерировать" onclick="onSubmitButtonClick()">
+        </div>
+        <div class="table-wrapper">
+            <h4>Таблица с случаыйнми чисалми с диапазоном от <code><span id="min-range-value"></span></code> до <code><span id="max-range-value"></span></code></h4>
+        </div>
+    </div>
 </body>
 </html>
