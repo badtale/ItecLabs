@@ -57,3 +57,17 @@ body{
     color: red;
 }
 
+.chess-table tr:nth-child(odd) td:nth-child(odd){
+    background-color: grey
+}
+
+.chess-table tr:nth-child(even) td:nth-child(even){
+    background-color: grey;
+}
+
+.table-cells{
+    max-width: 5px;
+    max-height: 5px;
+    min-width: 5px;
+    min-height: 5px;
+}

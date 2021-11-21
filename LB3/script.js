@@ -32,6 +32,7 @@ function onSubmitButtonClick(){
 function createTable(rows, cols, min, max){
     var tableWrapper = document.getElementsByClassName("table-wrapper");
     var table = document.createElement('table');
+    table.setAttribute('class', 'chess-table');
     table.style.width = '50%';
     table.setAttribute('border', '1');
     var tableBody = document.createElement('tbody');
@@ -40,8 +41,7 @@ function createTable(rows, cols, min, max){
         for (let j = 0; j < cols; j++) {
             var tableData = document.createElement('td');
             tableData.innerText = getRandomIntInclusive(parseInt(min), parseInt(max));
-            tableData.setAttribute('height', '2px');
-            tableData.setAttribute('width', '2px');
+            tableData.setAttribute('class', 'table-cells');
             tableRow.appendChild(tableData);     
         }   
         
