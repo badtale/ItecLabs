@@ -1,6 +1,6 @@
 function onSubmitButtonClick(){
-    var minRangeValue = document.getElementById("min-range").value;
-    var maxRangeValue = document.getElementById("max-range").value;
+    var minRangeValue = parseInt(document.getElementById("min-range").value);
+    var maxRangeValue = parseInt(document.getElementById("max-range").value);
 
     if (minRangeValue == maxRangeValue) {
         alert("Введите разные значения");
